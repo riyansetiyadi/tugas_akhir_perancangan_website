@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+<body>
+    <nav>
+        <div class="container flex-row">	
+            <a href="index.html" id="teks-lapaktani"><span>LAPAK</span>TANI</a>
+            <div class="flex-row fixed">
+                <div>
+                    <img src="assets/icons/menu-putih.png" class="tombol-dropdown">
+                    <div class="flex-row dropdown-child">
+                        <a href="index.html#katalog" class="navigasi">Katalog</a>
+                        <a href="index.html#tentang" class="navigasi">Tentang</a>
+                        <a href="index.html#kontak" class="navigasi">Kontak</a>
+                    </div>
+                </div>
+                <div class="flex-row" id="pencarian">
+                    <input type="text" placeholder="Coba cari Rosa">
+                    <a href="katalog.html" id="icon-pencarian">
+                        <img src="assets/icons/pencarian.png" alt="cari" class="icon">
+                    </a>
+                </div>
+                <a href="keranjang.html">
+                    <img src="assets/icons/keranjang.png" alt="keranjang" class="icon">
+                </a>
+            </div>
+            <div class="flex-row hilang">
+                <a href="masuk.html">Masuk</a>
+                <a href="daftar.html" class="button-pendek button-warna">Daftar</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="container flex-column">
+            <div id="formulir" class="flex-column">
+                <form action="" name="masuk" method="POST" onsubmit="return formMasuk()" class="rata-tengah">
+                    <div class="flex-row flex-center">
+                        <a href="daftar.html" class="button-pendek button-warna">Daftar</a>
+                        <a href="masuk.html" class="button-pendek button-putih">Masuk</a>
+                    </div>
+                    <div class="flex-column">
+                        <a href="https://www.facebook.com/" target="_blank" class="flex-row button-panjang facebook">
+                            <img src="assets/icons/facebook.png" alt="logo facebook" class="medsos">
+                            <div class="medsos">Masuk dengan Facebook</div>
+                        </a>
+                        <a href="https://www.google.com/" target="_blank" class="flex-row button-panjang google">
+                            <img src="assets/icons/google.png" alt="logo google" class="medsos">
+                            <div class="medsos">Masuk dengan Google</div>
+                        </a>
+                    </div>
+                    <div class="teks-hitam">-atau-</div>
+                    <div class="flex-column">
+                        <input type="email" name="email" id="" placeholder="Email">
+                        <input type="password" name="password" id="" placeholder="Password">
+                    </div>
+                    <div>
+                        <button type="submit" class="button-panjang button-warna">Masuk</button>
+                    </div>
+                    <div><a href="lupa-password.html" class="teks-hitam">Lupa password?</a></div>
+                    <div><a href="daftar.html" class="teks-hitam">Belum punya akun? Daftar</a></div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tugas Perancangan Website</title>
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/keranjang.css">
+    </head>
+    <body>
+        <nav>
+			<div class="container flex-row">	
+				<a href="index.html" id="teks-lapaktani"><span>LAPAK</span>TANI</a>
+				<div class="flex-row fixed">
+					<div>
+						<img src="assets/icons/menu-putih.png" class="tombol-dropdown">
+						<div class="flex-row dropdown-child">
+							<a href="index.html#katalog" class="navigasi">Katalog</a>
+							<a href="index.html#tentang" class="navigasi">Tentang</a>
+							<a href="index.html#kontak" class="navigasi">Kontak</a>
+						</div>
+					</div>
+					<div class="flex-row" id="pencarian">
+						<input type="text" placeholder="Coba cari Rosa">
+						<a href="katalog.html" id="icon-pencarian">
+							<img src="assets/icons/pencarian.png" alt="cari" class="icon">
+						</a>
+					</div>
+					<a href="keranjang.html">
+						<img src="assets/icons/keranjang.png" alt="keranjang" class="icon">
+					</a>
+				</div>
+				<div class="flex-row hilang">
+					<a href="masuk.html">Masuk</a>
+					<a href="daftar.html" class="button-pendek button-warna">Daftar</a>
+				</div>
+			</div>
+		</nav>
+
+        
+        <main>
+            <div class="container">
+                <h1>KERANJANG</h1>
+            </div>
+            <div class="container grid-content">
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Produk</td>
+                                <td>Harga</td>
+                                <td>Kuantitas</td>
+                                <td>Total</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody id="display-keranjang">
+
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <aside>
+                        <form action="">
+                            <table>
+                                <tr>
+                                    <td>Subtotal</td>
+                                    <td id="total-harga"></td>
+                                </tr>
+                                <tr class="hilang">
+                                    <td>Pengiriman</td>
+                                    <td>Rp0</td>
+                                </tr>
+                                <tr class="hilang">
+                                    <td>Alamat</td>
+                                    <td>
+                                        <select name="" id="">
+                                            <option value="Tambah Alamat" selected>Tambah Alamat</option>
+                                            <option value="Ajung">Ajung</option>
+                                            <option value="Ambulu">Ambulu</option>
+                                            <option value="Kaliwates">Kaliwates</option>
+                                            <option value="Sumbersari">Sumbersari</option>
+                                            <option value="Tanggul">Tanggul</option>
+                                            <option value="Arjasa">Arjasa</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Kode Promo</td>
+                                    <td>
+                                        <input type="text" placeholder="Masukkan kode promo">
+                                    </td>
+                                </tr>
+                                <tr class="hilang">
+                                    <td></td>
+                                    <td>Rp0</td>
+                                </tr>
+                                <tr class="hilang">
+                                    <td>Total</td>
+                                    <td>Rp0</td>
+                                </tr>
+                                <tr class="hilang">
+                                    <td>Metode Pembayaran</td>
+                                    <td>
+                                        <select name="" id="pembayaran">
+                                            <option value="Pilih metode pembayaran" selected>Pilih metode pembayaran</option>
+                                            <option value="Link Aja">Link Aja</option>
+                                            <option value="OVO">OVO</option>
+                                            <option value="Gopay">Gopay</option>
+                                            <option value="Dana">Dana</option>
+                                            <option value="Shopeepay">Shopeepay</option>
+                                            <option value="Bank Mandiri">Bank Mandiri</option>
+                                            <option value="Bank BRI">Bank BRI</option>
+                                            <option value="Bank BCA">Bank BCA</option>
+                                            <option value="Bank BNI">Bank BNI</option>
+                                            <option value="Bank Jatim">Bank Jatim</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" id="tombol-beli">
+                                        <a href="#" class="button-pendek button-warna">Beli</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </aside>
+                </div>
+            </div>
+        </main>
+        <footer class="hilang">2000 - 2020 PT.Lapak Tani</footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

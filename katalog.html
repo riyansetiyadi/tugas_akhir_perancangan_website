@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/katalog.css">
+</head>
+<body>
+    <nav>
+        <div class="container flex-row">	
+            <a href="index.html" id="teks-lapaktani"><span>LAPAK</span>TANI</a>
+            <div class="flex-row fixed">
+                <div>
+                    <img src="assets/icons/menu-putih.png" class="tombol-dropdown">
+                    <div class="flex-row dropdown-child">
+                        <a href="index.html#katalog" class="navigasi">Katalog</a>
+                        <a href="index.html#tentang" class="navigasi">Tentang</a>
+                        <a href="index.html#kontak" class="navigasi">Kontak</a>
+                    </div>
+                </div>
+                <div class="flex-row" id="pencarian">
+                    <input type="text" placeholder="Coba cari Rosa">
+                    <a href="katalog.html" id="icon-pencarian">
+                        <img src="assets/icons/pencarian.png" alt="cari" class="icon">
+                    </a>
+                </div>
+                <a href="keranjang.html">
+                    <img src="assets/icons/keranjang.png" alt="keranjang" class="icon">
+                </a>
+            </div>
+            <div class="flex-row hilang">
+                <a href="masuk.html">Masuk</a>
+                <a href="daftar.html" class="button-pendek button-warna">Daftar</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h1>KATALOG</h1>
+        </div>
+        <div class="container grid-content">
+            <div class="hilang">
+                <aside>
+                    <h2>Filter</h2>
+                    <div class="h3">
+                        <h3>Kategori</h3>
+                        <div>
+                            <div class="h4">
+                                <h4>Buah</h4>
+                                <select name="Buah" id="buah">
+                                    <option value="Pilih buah" selected>Pilih buah</option>
+                                    <option value="Semangka">Semangka</option>
+                                    <option value="Mangga">Mangga</option>
+                                    <option value="Nanas">Nanas</option>
+                                    <option value="Bengkuang">Bengkuang</option>
+                                    <option value="Jeruk">Jeruk</option>
+                                </select>
+                            </div>
+                            <div class="h4">
+                                <h4>Sayur</h4>
+                                <select name="Buah" id="buah">
+                                    <option value="Pilih sayur" selected>Pilih sayur</option>
+                                    <option value="Kentang">Kentang</option>
+                                    <option value="Tomat">Tomat</option>
+                                    <option value="Kubis">Kubis</option>
+                                    <option value="Bombay">Bombay</option>
+                                    <option value="cabai">Cabai</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex-row h3 check-diskon">
+                            <input type="checkbox" name="Diskon" id="">
+                            <h3>Diskon</h3>
+                        </div>
+                        <div class="h3">
+                            <h3>Lokasi</h3>
+                            <input type="text" name="lokasi" id="lokasi" placeholder="Cari lokasi" class="h4">
+                        </div>
+                        <div class="flex-column h3">
+                            <h3>Harga</h3>
+                            <input type="number" name="harga minimum" id="harga-minimum" placeholder="Harga Minimum" class="h4">
+                            <input type="number" name="harga maksimum" id="harga-maksimum" placeholder="Harga Maksimum" class="h4">
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div>
+                <select name="urutkan" id="urutkan">
+                    <option value="urutkan">Urutkan</option>
+                    <option value="terbaru">Terbaru</option>
+                    <option value="terlama">Terlama</option>
+                    <option value="termahal">Termahal</option>
+                    <option value="termurah">Termurah</option>
+                </select>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="assets/images/jagung.png" alt="">
+                        <div>
+                            <div class="lihat-detail">
+                                <a href="produk.html" class="button-detail">
+                                    Detail
+                                    <span>
+                                        <img src="assets/icons/panah.png" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="flex-row nama">
+                                <a href="#" class="nama-produk">Jagung</a>
+                                <p>-</p>
+                                <a href="#" class="nama-toko">Rosa olshop</a>
+                            </div>
+                            <div class="flex-row harga-keranjang">
+                                <p>Rp5.000/pcs</p>
+                                <a href="#" class="keranjang-plus" id="jagung">
+                                    <img src="assets/icons/keranjang-plus.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/images/beras.png" alt="">
+                        <div>
+                            <div class="lihat-detail">
+                                <a href="katalog.html" class="button-detail">
+                                    Detail
+                                    <span>
+                                        <img src="assets/icons/panah.png" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="flex-row nama">
+                                <a href="#" class="nama-produk">Beras</a>
+                                <p>-</p>
+                                <a href="#" class="nama-toko">Rosa olshop</a>
+                            </div>
+                            <div class="flex-row harga-keranjang">
+                                <p>Rp10.000/kg</p>
+                                <a href="#" class="keranjang-plus">
+                                    <img src="assets/icons/keranjang-plus.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/images/cabai.png" alt="">
+                        <div>
+                            <div class="lihat-detail">
+                                <a href="katalog.html" class="button-detail">
+                                    Detail
+                                    <span>
+                                        <img src="assets/icons/panah.png" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="flex-row nama">
+                                <a href="#" class="nama-produk">Cabai</a>
+                                <p>-</p>
+                                <a href="#" class="nama-toko">Rosa olshop</a>
+                            </div>
+                            <div class="flex-row harga-keranjang">
+                                <p>Rp20.000/kg</p>
+                                <a href="#" class="keranjang-plus">
+                                    <img src="assets/icons/keranjang-plus.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="grid-item">
+                        <img src="assets/images/jeruk.png" alt="">
+                        <div>
+                            <div class="lihat-detail">
+                                <a href="katalog.html" class="button-detail">
+                                    Detail
+                                    <span>
+                                        <img src="assets/icons/panah.png" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="flex-row nama">
+                                <a href="#" class="nama-produk">Jeruk</a>
+                                <p>-</p>
+                                <a href="#" class="nama-toko">Rosa olshop</a>
+                            </div>
+                            <div class="flex-row harga-keranjang">
+                                <p>Rp10.000/kg</p>
+                                <a href="#" class="keranjang-plus">
+                                    <img src="assets/icons/keranjang-plus.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/images/kentang.png" alt="">
+                        <div>
+                            <div class="lihat-detail">
+                                <a href="katalog.html" class="button-detail">
+                                    Detail
+                                    <span>
+                                        <img src="assets/icons/panah.png" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="flex-row nama">
+                                <a href="#" class="nama-produk">Kentang</a>
+                                <p>-</p>
+                                <a href="#" class="nama-toko">Rosa olshop</a>
+                            </div>
+                            <div class="flex-row harga-keranjang">
+                                <p>Rp15.000/kg</p>
+                                <a href="#" class="keranjang-plus">
+                                    <img src="assets/icons/keranjang-plus.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/images/semangka.png" alt="">
+                        <div>
+                            <div class="lihat-detail">
+                                <a href="katalog.html" class="button-detail">
+                                    Detail
+                                    <span>
+                                        <img src="assets/icons/panah.png" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="flex-row nama">
+                                <a href="#" class="nama-produk">Semangka</a>
+                                <p>-</p>
+                                <a href="#" class="nama-toko">Rosa olshop</a>
+                            </div>
+                            <div class="flex-row harga-keranjang">
+                                <p>Rp8.000/kg</p>
+                                <a href="#" class="keranjang-plus">
+                                    <img src="assets/icons/keranjang-plus.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="grid-item">
+                        <img src="assets/images/kubis.png" alt="">
+                        <div>
+                            <div class="lihat-detail">
+                                <a href="katalog.html" class="button-detail">
+                                    Detail
+                                    <span>
+                                        <img src="assets/icons/panah.png" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="flex-row nama">
+                                <a href="#" class="nama-produk">Kubis</a>
+                                <p>-</p>
+                                <a href="#" class="nama-toko">Rosa olshop</a>
+                            </div>
+                            <div class="flex-row harga-keranjang">
+                                <p>Rp2.500/pcs</p>
+                                <a href="#" class="keranjang-plus">
+                                    <img src="assets/icons/keranjang-plus.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item ">
+                        <img src="assets/images/terong.png" alt="">
+                        <div>
+                            <div class="lihat-detail">
+                                <a href="katalog.html" class="button-detail">
+                                    Detail
+                                    <span>
+                                        <img src="assets/icons/panah.png" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="flex-row nama">
+                                <a href="#" class="nama-produk">Terong</a>
+                                <p>-</p>
+                                <a href="#" class="nama-toko">Rosa olshop</a>
+                            </div>
+                            <div class="flex-row harga-keranjang">
+                                <p>Rp5.000/iket</p>
+                                <a href="#" class="keranjang-plus">
+                                    <img src="assets/icons/keranjang-plus.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/images/bombay.png" alt="">
+                        <div>
+                            <div class="lihat-detail">
+                                <a href="katalog.html" class="button-detail">
+                                    Detail
+                                    <span>
+                                        <img src="assets/icons/panah.png" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="flex-row nama">
+                                <a href="#" class="nama-produk">Bombay</a>
+                                <p>-</p>
+                                <a href="#" class="nama-toko">Rosa olshop</a>
+                            </div>
+                            <div class="flex-row harga-keranjang">
+                                <p>Rp3.000/pcs</p>
+                                <a href="#" class="keranjang-plus">
+                                    <img src="assets/icons/keranjang-plus.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>2000 - 2020 PT.Lapak Tani</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+body {
+    background: linear-gradient(180deg, #91B47A 0%, #689159 100%);
+}
+
+h1 {
+    font-size: 60px;
+    padding-top: 100px;
+    font-family: Qualy;
+}
+select, input {
+    background-color: transparent;
+    border: white solid 2px;
+    border-radius: 5px;
+}
+
+main aside {
+    position: fixed;
+    background-color: #22544B;
+    opacity: 0.5;
+    border-radius: 10px;
+    padding: 20px;    
+}
+main aside h2 {
+    margin-bottom: 15px;
+}
+main aside div.h3 {
+    margin-bottom: 10px;
+}
+main aside .h4 {
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+main aside div.check-diskon {
+    align-items: center;
+}
+
+main div.grid-content {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 250px auto;
+}
+main div.grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+main div.grid-item {
+    background: linear-gradient(360deg, #22544B 0%, #689159 70.31%);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 350px;
+}
+main div.grid-item img {
+    width: 200px;
+    margin: auto;
+}
+main div.lihat-detail {
+    text-align: right;
+}
+main a.button-detail {
+    background-color: transparent;
+    border: 2px solid #B0F398;
+    border-radius: 20px;
+    font-size: 10px;
+    padding: 3px 0px 3px 5px;
+}
+main a.button-detail span {
+    margin-left: 7px;
+    background-color: #B0F398;
+    padding: 5px;
+    border-radius: 20px;
+}
+main a.button-detail span img {
+    width: 10px;
+}
+main div.grid-container div.nama {
+    font-size: 17px;
+    letter-spacing: 0.075em;
+    font-weight: 600;
+}
+main div.grid-container div.harga-keranjang {
+    justify-content: space-between;
+    align-items: center;
+}
+main div.grid-container div.harga-keranjang p {
+    font-size: 16px;
+}
+main div.harga-keranjang a.keranjang-plus {
+    background-color: #B0F398;
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+main div.harga-keranjang a.keranjang-plus img {
+    width: 20px;
+}
+
+@media screen and (max-width: 768px) { 
+    h1, select#urutkan {
+        margin: 0px 10px;
+    }
+    
+    main div.grid-content {
+        grid-template-columns: auto;
+    }
+    main div.grid-container {
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+    main div.grid-item {
+        height: 300px;
+    }
+    main div.grid-item img {
+        width: 100%;
+    }
+    main div.grid-container div.harga-keranjang p {
+        font-size: 15px;
+    }
+    main div.lihat-detail {
+        text-align: right;
+    }
+    main a.button-detail {
+        border: 1px solid #B0F398;
+        font-size: 7px;
+    }
+    main a.button-detail span {
+        padding: 3px;
+    }
+    main a.button-detail span img {
+        width: 7px;
+    }
+    main div.grid-container div.nama {
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        font-weight: 400;
+    }
+    main div.grid-container div.harga-keranjang p {
+        font-size: 14px;
+    }
+    main div.harga-keranjang a.keranjang-plus {
+        padding: 0px 10px;
+        border-radius: 20px;
+    }
+    main div.harga-keranjang a.keranjang-plus img {
+        width: 15px;
+    }
+}
